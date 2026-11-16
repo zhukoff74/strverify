@@ -1,3 +1,5 @@
+![GitHub License](https://img.shields.io/github/license/zhukoff74/strverify) ![PyPI Version](https://img.shields.io/pypi/v/strverify) ![PyPI Downloads](https://img.shields.io/pypi/dm/strverify)
+
 # strverify
 
 A fast string-content validation library with a Rust core and a Python API.
