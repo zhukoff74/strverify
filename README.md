@@ -1,4 +1,4 @@
-![GitHub License](https://img.shields.io/github/license/zhukoff74/strverify) ![PyPI Version](https://img.shields.io/pypi/v/strverify) ![PyPI Downloads](https://img.shields.io/pypi/dm/strverify)
+![GitHub License](https://img.shields.io/github/license/zhukoff74/strverify) ![PyPI Version](https://img.shields.io/pypi/v/strverify) ![PyPI Downloads](https://img.shields.io/pypi/dm/strverify) [![Benchmarks](https://img.shields.io/badge/benchmarks-live-blue)](https://zhukoff74.github.io/strverify/dev/bench/)
 
 # strverify
 
@@ -214,39 +214,18 @@ Matching and combining:
 - `set | set` — union.
 - `"x" in set` — membership test for a single character.
 
-## Development
+## Performance
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install maturin pytest
+`strverify` is benchmarked on every push to `main` and every PR.
+Live charts (history per commit): [benchmarks dashboard](https://zhukoff74.github.io/strverify/dev/bench/).
 
-maturin develop --release
-pytest
-cargo test
-```
+Run locally:
 
-Building a wheel and an sdist:
+    maturin develop --release
+    python benchmarks/bench.py           # human-readable
+    python benchmarks/bench.py --json    # machine-readable
 
-```bash
-maturin build --release
-maturin sdist
-```
-
-The artifacts appear in `target/wheels/`.
-
-Publishing to PyPI (requires a token in `MATURIN_PYPI_TOKEN` or interactive
-input):
-
-```bash
-maturin publish
-```
-
-It is a good idea to test the package on TestPyPI first:
-
-```bash
-maturin publish --repository testpypi
-```
+The PR check fails if any case regresses by more than 30%.
 
 ## License
 
