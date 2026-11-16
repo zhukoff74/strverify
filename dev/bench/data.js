@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794852581299,
+  "lastUpdate": 1794853168625,
   "repoUrl": "https://github.com/zhukoff74/strverify",
   "entries": {
     "Benchmark": [
@@ -63,6 +63,70 @@ window.BENCHMARK_DATA = {
           {
             "name": "long_text_no_match",
             "value": 0.695,
+            "unit": "us"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "zhukoffwork@gmail.com",
+            "name": "Dmitry Zhukov",
+            "username": "zhukoff74"
+          },
+          "committer": {
+            "email": "zhukoffwork@gmail.com",
+            "name": "Dmitry Zhukov",
+            "username": "zhukoff74"
+          },
+          "distinct": true,
+          "id": "c9719a71731aa77966752d3e829e49ecaf31ccaa",
+          "message": "Update README.md",
+          "timestamp": "2026-11-16T21:18:48+03:00",
+          "tree_id": "6f6a481ed0ab6605d1a7fc64c4359f42a5940913",
+          "url": "https://github.com/zhukoff74/strverify/commit/c9719a71731aa77966752d3e829e49ecaf31ccaa"
+        },
+        "date": 1794853166937,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "only_cyrillic",
+            "value": 0.565,
+            "unit": "us"
+          },
+          {
+            "name": "only_latin",
+            "value": 0.503,
+            "unit": "us"
+          },
+          {
+            "name": "only_digits",
+            "value": 0.263,
+            "unit": "us"
+          },
+          {
+            "name": "only_digits_and",
+            "value": 0.403,
+            "unit": "us"
+          },
+          {
+            "name": "contains",
+            "value": 0.383,
+            "unit": "us"
+          },
+          {
+            "name": "compose_and_not",
+            "value": 1.482,
+            "unit": "us"
+          },
+          {
+            "name": "long_text_cyrillic",
+            "value": 8.368,
+            "unit": "us"
+          },
+          {
+            "name": "long_text_no_match",
+            "value": 0.711,
             "unit": "us"
           }
         ]
