@@ -40,6 +40,7 @@ classifiers = [
 
 [project.optional-dependencies]
 test = ["pytest>=8.0"]
+bench = ["regex>=2024.0"]
 
 [tool.maturin]
 python-source = "python"
