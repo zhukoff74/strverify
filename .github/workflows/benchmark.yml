@@ -49,3 +49,4 @@ jobs:
           alert-threshold: "130%"
           fail-on-alert: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          skip-fetch-gh-pages: true
